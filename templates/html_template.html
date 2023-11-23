@@ -1,0 +1,7 @@
+<h1>HTML Template</h1>
+<ul>
+    {% for battalion, data in army.items() %}
+        <li>{{ battalion }} - {{ data['species'] }} (Count: {{ data['count'] }})</li>
+    {% endfor %}
+</ul>
+
